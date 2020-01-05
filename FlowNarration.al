@@ -22,7 +22,7 @@ codeunit 50103 FlowNarration
             if GenJournalLine.Amount < 0 then
                 Error('Amount Must not be negative');
                 END;
-        Error('amout');
+        Error('amout,c,.v xc,. v,.xc v,.xc v.,');
 
     end;
 
