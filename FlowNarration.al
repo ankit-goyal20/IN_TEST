@@ -18,9 +18,10 @@ codeunit 50103 FlowNarration
     local procedure CheckAmountNeg(var GenJournalLine: Record "Gen. Journal Line")
     begin
         SourceCodeSetup.get;
-        if SourceCodeSetup."Cash Receipt Journal" = GenJournalLine."Source Code" then
+        if SourceCodeSetup."Cash Receipt Journal" = GenJournalLine."Source Code" then BEGIN
             if GenJournalLine.Amount < 0 then
                 Error('Amount Must not be negative');
+                END;
         Error('amout');
 
     end;
